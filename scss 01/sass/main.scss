@@ -1,0 +1,22 @@
+@import 'mixin';
+@import 'variable';
+
+h2{
+    color: $color_3;
+}
+
+
+.menu{
+    ul{
+        border: 1px solid red;
+        li{
+            display: inline-block;
+            padding: 5px 15px;
+            a{
+                color: green;
+                @include transition($sec : 10s);
+            }
+        }
+
+    }
+}
